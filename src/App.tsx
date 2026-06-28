@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const APP_URL = 'https://vida-e-controle-raab.vercel.app'
+const APP_URL = 'https://app.vidaecontrole.com.br'
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
