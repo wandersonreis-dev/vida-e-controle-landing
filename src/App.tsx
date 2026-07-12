@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrandIcon } from './components/BrandIcon'
 
 const APP_URL = 'https://app.vidaecontrole.com.br'
 
@@ -8,15 +9,7 @@ function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 bg-[#0C3D22] rounded-lg flex items-center justify-center">
-            <svg className="w-5 h-5 text-white" viewBox="0 0 40 40" fill="none" stroke="currentColor">
-              <path d="M9.28,11 A14,14 0 0,1 30.72,11" strokeWidth="2.8" strokeLinecap="round"/>
-              <path d="M33.16,15.21 A14,14 0 0,1 22.44,33.79" strokeWidth="2.8" strokeLinecap="round"/>
-              <path d="M17.56,33.79 A14,14 0 0,1 6.84,15.21" strokeWidth="2.8" strokeLinecap="round"/>
-              <circle cx="20" cy="20" r="6" strokeWidth="1.8"/>
-              <circle cx="20" cy="20" r="2" fill="currentColor"/>
-            </svg>
-          </div>
+          <BrandIcon size={32} />
           <div>
             <span className="font-bold text-gray-900 text-base block leading-tight" style={{ fontFamily: "'Instrument Sans', sans-serif" }}>Vida <span style={{ color: '#0C3D22', fontWeight: 400, fontStyle: 'italic' }}>e</span> Controle</span>
             <span className="text-xs tracking-widest leading-none" style={{ color: '#0C3D22' }}>CONCENTRE-SE NO QUE IMPORTA</span>
@@ -598,15 +591,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-3">
-              <div className="w-8 h-8 bg-[#0C3D22] rounded-lg flex items-center justify-center">
-                <svg className="w-5 h-5 text-white" viewBox="0 0 40 40" fill="none" stroke="currentColor">
-                  <path d="M9.28,11 A14,14 0 0,1 30.72,11" strokeWidth="2.8" strokeLinecap="round"/>
-                  <path d="M33.16,15.21 A14,14 0 0,1 22.44,33.79" strokeWidth="2.8" strokeLinecap="round"/>
-                  <path d="M17.56,33.79 A14,14 0 0,1 6.84,15.21" strokeWidth="2.8" strokeLinecap="round"/>
-                  <circle cx="20" cy="20" r="6" strokeWidth="1.8"/>
-                  <circle cx="20" cy="20" r="2" fill="currentColor"/>
-                </svg>
-              </div>
+              <BrandIcon size={32} />
               <div>
                 <span className="font-bold text-white text-base block leading-tight" style={{ fontFamily: "'Instrument Sans', sans-serif" }}>Vida <span style={{ color: '#2f9e6e', fontWeight: 400, fontStyle: 'italic' }}>e</span> Controle</span>
                 <span className="text-xs tracking-widest leading-none" style={{ color: '#2f9e6e' }}>CONCENTRE-SE NO QUE IMPORTA</span>
