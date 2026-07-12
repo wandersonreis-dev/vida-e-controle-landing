@@ -18,8 +18,8 @@ function Header() {
             </svg>
           </div>
           <div>
-            <span className="font-bold text-gray-900 text-base block leading-tight" style={{ fontFamily: "'Instrument Sans', sans-serif" }}>Vida e Controle</span>
-            <span className="text-xs text-gray-500 leading-none">Concentre-se no que importa</span>
+            <span className="font-bold text-gray-900 text-base block leading-tight" style={{ fontFamily: "'Instrument Sans', sans-serif" }}>Vida <span style={{ color: '#0C3D22', fontWeight: 400, fontStyle: 'italic' }}>e</span> Controle</span>
+            <span className="text-xs tracking-widest leading-none" style={{ color: '#0C3D22' }}>CONCENTRE-SE NO QUE IMPORTA</span>
           </div>
         </a>
 
@@ -608,8 +608,8 @@ function Footer() {
                 </svg>
               </div>
               <div>
-                <span className="font-bold text-white text-base block leading-tight" style={{ fontFamily: "'Instrument Sans', sans-serif" }}>Vida e Controle</span>
-                <span className="text-xs text-gray-500 leading-none">Concentre-se no que importa</span>
+                <span className="font-bold text-white text-base block leading-tight" style={{ fontFamily: "'Instrument Sans', sans-serif" }}>Vida <span style={{ color: '#2f9e6e', fontWeight: 400, fontStyle: 'italic' }}>e</span> Controle</span>
+                <span className="text-xs tracking-widest leading-none" style={{ color: '#2f9e6e' }}>CONCENTRE-SE NO QUE IMPORTA</span>
               </div>
             </div>
             <p className="text-sm leading-relaxed max-w-xs mt-3">
