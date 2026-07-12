@@ -17,7 +17,10 @@ function Header() {
               <circle cx="20" cy="20" r="2" fill="currentColor"/>
             </svg>
           </div>
-          <span className="font-bold text-gray-900 text-lg" style={{ fontFamily: "'Instrument Sans', sans-serif" }}>Vida e Controle</span>
+          <div>
+            <span className="font-bold text-gray-900 text-base block leading-tight" style={{ fontFamily: "'Instrument Sans', sans-serif" }}>Vida e Controle</span>
+            <span className="text-xs text-gray-500 leading-none">Concentre-se no que importa</span>
+          </div>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -604,9 +607,12 @@ function Footer() {
                   <circle cx="20" cy="20" r="2" fill="currentColor"/>
                 </svg>
               </div>
-              <span className="font-bold text-white text-lg" style={{ fontFamily: "'Instrument Sans', sans-serif" }}>Vida e Controle</span>
+              <div>
+                <span className="font-bold text-white text-base block leading-tight" style={{ fontFamily: "'Instrument Sans', sans-serif" }}>Vida e Controle</span>
+                <span className="text-xs text-gray-500 leading-none">Concentre-se no que importa</span>
+              </div>
             </div>
-            <p className="text-sm leading-relaxed max-w-xs">
+            <p className="text-sm leading-relaxed max-w-xs mt-3">
               Organize sua vida financeira, proteja suas senhas e gerencie seus contatos — tudo com segurança e simplicidade.
             </p>
           </div>
