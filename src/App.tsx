@@ -8,12 +8,8 @@ function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2.5">
-          <BrandIcon size={32} />
-          <div>
-            <span className="font-bold text-gray-900 text-base block leading-tight" style={{ fontFamily: "'Instrument Sans', sans-serif" }}>Vida <span style={{ color: '#0C3D22', fontWeight: 400, fontStyle: 'italic' }}>e</span> Controle</span>
-            <span className="text-xs tracking-widest leading-none" style={{ color: '#0C3D22' }}>CONCENTRE-SE NO QUE IMPORTA</span>
-          </div>
+        <a href="#">
+          <img src="/logo-completa.png" alt="Vida e Controle" style={{ height: '44px', width: 'auto' }} draggable={false} />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -586,18 +582,15 @@ function FinalCTA() {
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-12 px-6">
+    <footer style={{ backgroundColor: '#0C3D22' }} className="text-green-200/70 py-12 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-3">
-              <BrandIcon size={32} />
-              <div>
-                <span className="font-bold text-white text-base block leading-tight" style={{ fontFamily: "'Instrument Sans', sans-serif" }}>Vida <span style={{ color: '#2f9e6e', fontWeight: 400, fontStyle: 'italic' }}>e</span> Controle</span>
-                <span className="text-xs tracking-widest leading-none" style={{ color: '#2f9e6e' }}>CONCENTRE-SE NO QUE IMPORTA</span>
-              </div>
+              <img src="/simbolo-branco.svg" alt="" width={32} height={32} draggable={false} />
+              <img src="/nome-slogan-verde.png" alt="Vida e Controle" style={{ height: '44px', width: 'auto' }} draggable={false} />
             </div>
-            <p className="text-sm leading-relaxed max-w-xs mt-3">
+            <p className="text-sm leading-relaxed max-w-xs mt-3 text-green-100/70">
               Organize sua vida financeira, proteja suas senhas e gerencie seus contatos — tudo com segurança e simplicidade.
             </p>
           </div>
@@ -619,7 +612,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="border-t border-green-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-green-200/50">
           <p className="text-xs">© {new Date().getFullYear()} Vida e Controle. Todos os direitos reservados.</p>
           <p className="text-xs">Feito com amor no Brasil · Dados armazenados no Brasil</p>
         </div>
