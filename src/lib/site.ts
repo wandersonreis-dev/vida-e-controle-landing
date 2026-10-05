@@ -2,6 +2,13 @@ export const APP_URL = 'https://app.vidaecontrole.com.br'
 export const REGISTER_URL = `${APP_URL}/register`
 export const SUPPORT_EMAIL = 'suporte@vidaecontrole.com.br'
 
+// Identificação do fornecedor (Decreto 7.962/2013, art. 2º). Mantenha igual às páginas de Privacidade e Termos.
+export const COMPANY = {
+  name: 'Amplitude Distribuidora Ltda',
+  cnpj: '38.143.278/0001-90',
+  place: 'Maringá, PR',
+}
+
 // Preços iguais aos planos cadastrados no app (Mercado Pago)
 export const PRICE_MONTHLY = 39.9
 export const PRICE_YEARLY = 358.8

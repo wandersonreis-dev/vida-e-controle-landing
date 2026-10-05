@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Cta } from '../components/Cta'
 import { Logo } from '../components/Logo'
 import { Reveal } from '../components/Reveal'
-import { APP_URL, REGISTER_URL, SUPPORT_EMAIL } from '../lib/site'
+import { APP_URL, COMPANY, REGISTER_URL, SUPPORT_EMAIL } from '../lib/site'
 
 export function FinalCta() {
   return (
@@ -53,12 +53,10 @@ export function Footer() {
             </ul>
           </nav>
         </div>
-        {/* Identificação do fornecedor (Decreto 7.962/2013, art. 2º): preencher antes de publicar */}
+        {/* Identificação do fornecedor (Decreto 7.962/2013, art. 2º) */}
         <p className="mt-10 text-xs leading-relaxed text-green-100/80">
-          <span className="rounded bg-amber-200 px-1.5 py-0.5 font-semibold text-amber-950">[razão social]</span>
-          {' '}· CNPJ <span className="rounded bg-amber-200 px-1.5 py-0.5 font-semibold text-amber-950">[CNPJ]</span>
-          {' '}· <span className="rounded bg-amber-200 px-1.5 py-0.5 font-semibold text-amber-950">[endereço]</span>
-          {' '}· <a href={`mailto:${SUPPORT_EMAIL}`} className="underline underline-offset-2 hover:text-white">{SUPPORT_EMAIL}</a>
+          {COMPANY.name} · CNPJ {COMPANY.cnpj} · {COMPANY.place} ·{' '}
+          <a href={`mailto:${SUPPORT_EMAIL}`} className="underline underline-offset-2 hover:text-white">{SUPPORT_EMAIL}</a>
         </p>
         <div className="mt-6 flex flex-col items-center justify-between gap-2 border-t border-white/10 pt-6 text-xs text-green-100/60 sm:flex-row">
           <p>© {new Date().getFullYear()} Vida e Controle. Todos os direitos reservados.</p>
