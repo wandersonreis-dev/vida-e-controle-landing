@@ -14,9 +14,9 @@
   <style>
     :root { --forest:#0C3D22; --ink:#131714; --soft:#3F4842; --mute:#5C655F; --sand:#FBFAF7; --line:#ECEAE2; --mint:#edf7f2; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-padding-top: 24px; }
+    html { scroll-padding-top: 96px; } /* links do índice não ficam sob o cabeçalho fixo */
     body { font-family: 'Manrope', system-ui, sans-serif; background: var(--sand); color: var(--ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }
-    header { border-bottom: 1px solid var(--line); background: #fff; }
+    header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--line); background: #fff; }
     .bar { max-width: 780px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
     .logo { display: inline-flex; align-items: center; gap: 12px; }
     .logo img { width: 44px; height: 44px; display: block; }
