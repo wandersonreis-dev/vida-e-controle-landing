@@ -68,7 +68,7 @@ export function Pricing() {
         </Reveal>
 
         <p className="mt-6 text-center text-sm text-ink-mute">
-          Pagamento seguro pelo Mercado Pago. Sem multa e sem fidelidade.
+          Pagamento no cartão de crédito, com segurança, pelo Mercado Pago. Sem multa e sem fidelidade.
         </p>
       </div>
     </section>
