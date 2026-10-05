@@ -1,0 +1,34 @@
+[
+  {
+    "q": "Meus dados financeiros ficam seguros?",
+    "a": "Seus dados ficam em servidores em São Paulo, e cada conta só enxerga as próprias informações. A conexão é criptografada e não vendemos nem compartilhamos seus dados com anunciantes. O cofre de senhas tem uma proteção a mais: é criptografado no seu aparelho."
+  },
+  {
+    "q": "Vocês conseguem ver as senhas que eu guardo no cofre?",
+    "a": "Não. O cofre usa criptografia AES-256 e a chave é gerada no seu aparelho a partir da sua senha mestra. As senhas e as anotações chegam aos nossos servidores já embaralhadas, e não há como abri-las. Só o nome do serviço, o link e o usuário ficam em texto comum, para o app conseguir listar seus itens."
+  },
+  {
+    "q": "E se eu esquecer a senha mestra do cofre?",
+    "a": "Quando você cria o cofre, o app mostra uma chave de recuperação. Guarde essa chave num lugar seguro: com ela você volta a abrir o cofre. Sem a senha mestra e sem a chave de recuperação, ninguém consegue abrir, nem nós. Por isso a chave existe."
+  },
+  {
+    "q": "Preciso de cartão de crédito para testar?",
+    "a": "Não. Você cria a conta só com e-mail e senha e usa tudo por 30 dias. Só pedimos o pagamento se você decidir continuar."
+  },
+  {
+    "q": "Posso cancelar quando quiser?",
+    "a": "Sim. Não há multa nem fidelidade. A cobrança é feita pelo Mercado Pago, com renovação mensal ou anual conforme o plano escolhido."
+  },
+  {
+    "q": "Funciona no celular?",
+    "a": "Funciona no navegador do celular e também pode ser instalado na tela inicial, como um aplicativo, no Android e no iPhone. Ainda não está nas lojas de aplicativos."
+  },
+  {
+    "q": "Dá para trazer os contatos do meu telefone?",
+    "a": "Dá. Você importa um arquivo de contatos (.vcf) exportado da agenda, escolhe quem quer trazer e busca por nome ou telefone. No Android, também pode escolher direto da agenda. E o caminho contrário existe: exportar seus contatos em .vcf ou planilha."
+  },
+  {
+    "q": "Posso levar meus dados embora ou apagar tudo?",
+    "a": "Pode. Em Configurações você baixa seus lançamentos, contas e contatos em planilha (CSV) e, se quiser, exclui a conta, o que remove todos os seus dados de forma permanente."
+  }
+]

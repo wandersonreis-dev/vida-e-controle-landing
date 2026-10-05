@@ -8,13 +8,91 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 body {
   font-family: 'Manrope', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #F6F5F1;
+  background-color: #FBFAF7;
   color: #131714;
+  text-rendering: optimizeLegibility;
 }
 
-html {
-  scroll-behavior: smooth;
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+::selection {
+  background: #c9e9d8;
+  color: #092d19;
+}
+
+/* Toque sem atraso de duplo toque e sem "flash" cinza do navegador */
+a, button, summary {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Foco visível para quem navega pelo teclado */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #2f9e6e;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* Entrada suave ao rolar (desligada para quem pede menos movimento) */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .float-slow, .pulse-dot { animation: none !important; }
+}
+
+/* Fundo com textura leve para as seções não ficarem "chapadas" */
+.bg-grain {
+  background-image:
+    radial-gradient(60rem 30rem at 85% -10%, rgba(99,188,149,.22), transparent 60%),
+    radial-gradient(40rem 24rem at -10% 20%, rgba(201,233,216,.55), transparent 60%);
+}
+.bg-dots {
+  background-image: radial-gradient(rgba(12,61,34,.10) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.float-slow { animation: float-slow 7s ease-in-out infinite; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .45; transform: scale(.8); }
+}
+.pulse-dot { animation: pulse-dot 2.2s ease-in-out infinite; }
+
+/* Tipografia de destaque */
+.display {
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  font-weight: 800;
 }
