@@ -5,8 +5,8 @@ export const SUPPORT_EMAIL = 'suporte@vidaecontrole.com.br'
 // Identificação do fornecedor (Decreto 7.962/2013, art. 2º). Mantenha igual às páginas de Privacidade e Termos.
 export const COMPANY = {
   name: 'Amplitude Distribuidora Ltda',
-  cnpj: '38.143.278/0001-90',
-  place: 'Maringá, PR',
+  cnpj: '38.143.278/0002-71', // estabelecimento filial (a matriz, 38.143.278/0001-90, fica em Sete Lagoas, MG)
+  place: 'Rua São João, 315, Loja 01, Maringá, PR',
 }
 
 // Preços iguais aos planos cadastrados no app (Mercado Pago)

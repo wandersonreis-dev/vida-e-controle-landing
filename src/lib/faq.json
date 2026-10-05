@@ -16,8 +16,12 @@
     "a": "Não. Você cria a conta só com e-mail e senha e usa tudo por 30 dias. Só pedimos o pagamento se você decidir continuar."
   },
   {
+    "q": "O que acontece quando o teste termina?",
+    "a": "O app passa a funcionar em modo leitura: você continua vendo e exportando todos os seus dados, mas não adiciona nem edita até assinar. Guardamos tudo por até 90 dias e avisamos por e-mail antes de apagar. Se você assinar nesse período, tudo continua como estava."
+  },
+  {
     "q": "Posso cancelar quando quiser?",
-    "a": "Sim. Não há multa nem fidelidade. A cobrança é feita no cartão de crédito, pelo Mercado Pago, com renovação mensal ou anual conforme o plano escolhido."
+    "a": "Sim, quando quiser, pelo próprio app (Minha conta, botão Cancelar assinatura). Não há multa nem fidelidade, e você continua com acesso até o fim do período já pago. A cobrança é feita no cartão de crédito, pelo Mercado Pago, com renovação mensal ou anual conforme o plano escolhido."
   },
   {
     "q": "Funciona no celular?",
