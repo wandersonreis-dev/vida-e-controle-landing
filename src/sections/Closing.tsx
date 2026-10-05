@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Cta } from '../components/Cta'
+import { Logo } from '../components/Logo'
 import { Reveal } from '../components/Reveal'
 import { APP_URL, REGISTER_URL, SUPPORT_EMAIL } from '../lib/site'
 
@@ -28,10 +29,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-10 md:grid-cols-[1.6fr_1fr_1fr]">
           <div>
-            <div className="flex items-center gap-3">
-              <img src="/simbolo-branco.svg" alt="" width={36} height={36} loading="lazy" draggable={false} />
-              <img src="/nome-slogan-verde.png" alt="Vida e Controle" width={170} height={44} loading="lazy" style={{ height: 44, width: 'auto' }} draggable={false} />
-            </div>
+            <Logo tone="light" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-green-100/80">
               Finanças, cofre de senhas e contatos num painel só, com os dados guardados em servidores no Brasil.
             </p>
@@ -55,7 +53,14 @@ export function Footer() {
             </ul>
           </nav>
         </div>
-        <div className="mt-10 flex flex-col items-center justify-between gap-2 border-t border-white/10 pt-6 text-xs text-green-100/60 sm:flex-row">
+        {/* Identificação do fornecedor (Decreto 7.962/2013, art. 2º): preencher antes de publicar */}
+        <p className="mt-10 text-xs leading-relaxed text-green-100/80">
+          <span className="rounded bg-amber-200 px-1.5 py-0.5 font-semibold text-amber-950">[razão social]</span>
+          {' '}· CNPJ <span className="rounded bg-amber-200 px-1.5 py-0.5 font-semibold text-amber-950">[CNPJ]</span>
+          {' '}· <span className="rounded bg-amber-200 px-1.5 py-0.5 font-semibold text-amber-950">[endereço]</span>
+          {' '}· <a href={`mailto:${SUPPORT_EMAIL}`} className="underline underline-offset-2 hover:text-white">{SUPPORT_EMAIL}</a>
+        </p>
+        <div className="mt-6 flex flex-col items-center justify-between gap-2 border-t border-white/10 pt-6 text-xs text-green-100/60 sm:flex-row">
           <p>© {new Date().getFullYear()} Vida e Controle. Todos os direitos reservados.</p>
           <p>Dados armazenados em São Paulo, Brasil</p>
         </div>

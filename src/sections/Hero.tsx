@@ -5,7 +5,7 @@ import { Reveal } from '../components/Reveal'
 
 export function Hero() {
   return (
-    <section id="topo" className="bg-grain relative overflow-hidden px-5 pb-16 pt-28 sm:px-6 sm:pb-24 sm:pt-36">
+    <section id="topo" className="bg-grain relative overflow-hidden px-5 pb-16 pt-32 sm:px-6 sm:pb-24 sm:pt-40">
       <div className="bg-dots pointer-events-none absolute inset-0 opacity-60 [mask-image:linear-gradient(to_bottom,black,transparent_70%)]" aria-hidden />
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-10">
         <div>

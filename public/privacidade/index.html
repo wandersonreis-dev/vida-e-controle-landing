@@ -4,106 +4,194 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Política de Privacidade — Vida e Controle</title>
-  <meta name="description" content="Como o Vida e Controle trata os seus dados pessoais: o que coletamos, para quê, com quem compartilhamos e como exercer seus direitos pela LGPD." />
+  <meta name="description" content="Como o Vida e Controle trata os seus dados pessoais: o que coletamos, para quê, com quem compartilhamos, por quanto tempo guardamos e como exercer seus direitos pela LGPD." />
   <meta name="theme-color" content="#ffffff" />
   <link rel="canonical" href="https://vidaecontrole.com.br/privacidade/" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,700;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root { --forest:#0C3D22; --ink:#131714; --soft:#3F4842; --mute:#5C655F; --sand:#FBFAF7; --line:#ECEAE2; --mint:#edf7f2; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-padding-top: 24px; }
     body { font-family: 'Manrope', system-ui, sans-serif; background: var(--sand); color: var(--ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }
     header { border-bottom: 1px solid var(--line); background: #fff; }
-    .bar { max-width: 760px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-    .bar img { height: 40px; width: auto; display: block; }
+    .bar { max-width: 780px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .logo { display: inline-flex; align-items: center; gap: 12px; }
+    .logo img { width: 44px; height: 44px; display: block; }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-name { font-family: 'Instrument Sans', 'Manrope', sans-serif; font-weight: 700; font-size: 1.7rem; line-height: 1; letter-spacing: -0.02em; color: var(--ink); }
+    .logo-name em { font-weight: 400; font-style: italic; color: #2f9e6e; }
+    .logo-slogan { margin-top: 6px; font-size: 10.5px; font-weight: 700; line-height: 1; letter-spacing: 0.17em; text-transform: uppercase; white-space: nowrap; color: #1a6641; }
     .bar a.back { font-size: 14px; font-weight: 600; color: var(--forest); text-decoration: none; }
     .bar a.back:hover { text-decoration: underline; }
-    main { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+    main { max-width: 780px; margin: 0 auto; padding: 48px 20px 80px; }
     h1 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.1; letter-spacing: -0.03em; font-weight: 800; }
     .meta { margin-top: 12px; color: var(--mute); font-size: 14px; }
-    h2 { margin-top: 40px; font-size: 1.3rem; letter-spacing: -0.01em; font-weight: 800; }
-    p, li { margin-top: 12px; color: var(--soft); }
-    ul { padding-left: 22px; }
+    h2 { margin-top: 44px; font-size: 1.3rem; letter-spacing: -0.01em; font-weight: 800; }
+    h3 { margin-top: 24px; font-size: 1.05rem; font-weight: 700; }
+    p, li, td, th { color: var(--soft); }
+    p { margin-top: 12px; }
+    ul, ol { padding-left: 22px; margin-top: 8px; }
     li { margin-top: 6px; }
     a { color: var(--forest); text-underline-offset: 3px; }
     mark { background: #fff3c4; color: #5a4300; padding: 1px 6px; border-radius: 4px; font-weight: 600; }
     .box { margin-top: 24px; padding: 16px 18px; background: var(--mint); border: 1px solid #c9e9d8; border-radius: 12px; color: var(--ink); }
+    .box p, .box li { color: var(--ink); }
+    .box p:first-child { margin-top: 0; }
+    .toc { margin-top: 24px; padding: 16px 18px 16px 38px; background: #fff; border: 1px solid var(--line); border-radius: 12px; font-size: 14.5px; columns: 2; column-gap: 28px; }
+    .toc li { margin-top: 4px; break-inside: avoid; }
+    .tablewrap { overflow-x: auto; margin-top: 14px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14.5px; background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+    th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+    th { background: var(--sand); color: var(--ink); font-weight: 700; }
+    tr:last-child td { border-bottom: 0; }
     footer { border-top: 1px solid var(--line); padding: 24px 20px; text-align: center; color: var(--mute); font-size: 13px; }
     a:focus-visible { outline: 3px solid #2f9e6e; outline-offset: 3px; border-radius: 4px; }
+    @media (max-width: 640px) { .toc { columns: 1; } }
+    @media (max-width: 520px) { .bar a.back { display: none; } }
   </style>
 </head>
 <body>
   <header>
     <div class="bar">
-      <a href="/" aria-label="Vida e Controle, início"><img src="/logo-completa.png" alt="Vida e Controle" width="150" height="40" /></a>
+      <a href="/" aria-label="Vida e Controle, início"><span class="logo"><img src="/icon.svg" width="44" height="44" alt="" /><span class="logo-text" translate="no"><span class="logo-name">Vida <em>e</em> Controle</span><span class="logo-slogan">Concentre-se no que importa</span></span></span></a>
       <a class="back" href="/">Voltar ao site</a>
     </div>
   </header>
 
   <main>
     <h1>Política de Privacidade</h1>
-    <p class="meta">Última atualização: 4 de outubro de 2026</p>
+    <p class="meta">Versão 1.0 · Última atualização: 4 de outubro de 2026</p>
 
-    <p>Esta política explica como o Vida e Controle trata os seus dados pessoais, em linguagem direta e de acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, a LGPD).</p>
+    <div class="box">
+      <p><strong>Em resumo:</strong></p>
+      <ul>
+        <li>Coletamos só o que o app precisa para funcionar: sua conta, o que você cadastra e dados técnicos de segurança.</li>
+        <li>Senhas e anotações do cofre são criptografadas no seu aparelho, e nós não conseguimos abri-las.</li>
+        <li>Não vendemos seus dados nem os usamos para publicidade de terceiros.</li>
+        <li>Seus dados ficam em servidores em São Paulo. Você pode baixar seus dados e excluir a conta quando quiser.</li>
+      </ul>
+    </div>
 
-    <h2>1. Quem é o responsável pelos dados</h2>
-    <p>O Vida e Controle é operado por <mark>[preencher: razão social]</mark>, inscrita no CNPJ sob o nº <mark>[preencher: CNPJ]</mark> (“nós”). Somos o controlador dos dados tratados no serviço. Para qualquer assunto de privacidade, escreva para <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a>. Encarregado pelo tratamento de dados (DPO): <mark>[preencher: nome ou canal]</mark>.</p>
+    <p>Esta política explica como o Vida e Controle (“nós”) trata dados pessoais de quem usa o site e o aplicativo (“você”), em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018, “LGPD”), o Marco Civil da Internet (Lei nº 12.965/2014) e o Código de Defesa do Consumidor (Lei nº 8.078/1990).</p>
 
-    <h2>2. Quais dados coletamos</h2>
+    <ol class="toc" aria-label="Sumário">
+      <li><a href="#s1">Quem é o responsável</a></li>
+      <li><a href="#s2">Dados que tratamos</a></li>
+      <li><a href="#s3">Para que usamos e bases legais</a></li>
+      <li><a href="#s4">Cofre digital</a></li>
+      <li><a href="#s5">Com quem compartilhamos</a></li>
+      <li><a href="#s6">Transferência internacional</a></li>
+      <li><a href="#s7">Por quanto tempo guardamos</a></li>
+      <li><a href="#s8">Seus direitos</a></li>
+      <li><a href="#s9">Segurança e incidentes</a></li>
+      <li><a href="#s10">Cookies e armazenamento local</a></li>
+      <li><a href="#s11">Contatos e dados de terceiros</a></li>
+      <li><a href="#s12">Dados sensíveis</a></li>
+      <li><a href="#s13">Menores de idade</a></li>
+      <li><a href="#s14">Mudanças nesta política</a></li>
+      <li><a href="#s15">Contato e encarregado</a></li>
+    </ol>
+
+    <h2 id="s1">1. Quem é o responsável pelos seus dados</h2>
+    <p>O controlador dos dados pessoais tratados no Vida e Controle é <mark>[preencher: razão social]</mark>, inscrita no CNPJ sob o nº <mark>[preencher: CNPJ]</mark>, com sede em <mark>[preencher: endereço completo]</mark>. Canal de contato: <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a>.</p>
+
+    <h2 id="s2">2. Dados que tratamos</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th scope="col">Tipo de dado</th><th scope="col">O que inclui</th><th scope="col">De onde vem</th></tr></thead>
+        <tbody>
+          <tr><td>Conta e acesso</td><td>Nome, e-mail e senha de acesso (a senha é protegida pelo sistema de autenticação e não fica legível para nós)</td><td>Você, no cadastro</td></tr>
+          <tr><td>Dados financeiros que você registra</td><td>Lançamentos, contas, cartões, faturas, categorias, tags e orçamentos</td><td>Você, ao usar o app</td></tr>
+          <tr><td>Contatos que você cadastra</td><td>Nome, telefone, e-mail, aniversário, empresa, categoria e anotações de cada contato</td><td>Você, digitando ou importando um arquivo (.vcf) ou a agenda do telefone</td></tr>
+          <tr><td>Cofre digital</td><td>Senhas e anotações (criptografadas no seu aparelho). Nome do serviço, link, usuário e categoria ficam em texto comum, para o app listar seus itens</td><td>Você, ao usar o cofre</td></tr>
+          <tr><td>Assinatura e pagamento</td><td>Plano contratado, situação e identificadores da cobrança. Os dados do cartão são tratados pelo Mercado Pago e não ficam conosco</td><td>Você e o Mercado Pago</td></tr>
+          <tr><td>Preferências</td><td>Configurações do app, temas e palavras-chave de notícias, modo de exibição</td><td>Você, ao configurar</td></tr>
+          <tr><td>Registros de acesso e segurança</td><td>Data, hora, endereço IP e tipo de navegador ou aparelho</td><td>Gerados automaticamente quando você usa o serviço</td></tr>
+          <tr><td>Mensagens de suporte</td><td>O que você nos escrever e seu e-mail</td><td>Você, ao falar conosco</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Notícias.</strong> Os temas e as palavras-chave que você escolhe servem para buscar manchetes. A busca é feita pelos nossos servidores em fontes públicas (portais de notícias e o Google Notícias), sem enviar a elas o seu nome, e-mail ou outros dados da sua conta. Ao clicar numa manchete, você sai do Vida e Controle e passa a seguir a política de privacidade do site de destino.</p>
+
+    <h2 id="s3">3. Para que usamos os dados e em quais bases legais</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th scope="col">Finalidade</th><th scope="col">Base legal (LGPD, art. 7º)</th></tr></thead>
+        <tbody>
+          <tr><td>Criar e manter sua conta, mostrar seu painel e guardar o que você registra</td><td>Execução de contrato (inciso V)</td></tr>
+          <tr><td>Cobrar a assinatura, emitir documentos fiscais e atender a exigências legais</td><td>Execução de contrato (V) e cumprimento de obrigação legal ou regulatória (II)</td></tr>
+          <tr><td>Manter registros de acesso à aplicação pelo prazo que a lei determina</td><td>Cumprimento de obrigação legal (II), Marco Civil da Internet, art. 15</td></tr>
+          <tr><td>Segurança da conta, prevenção a fraudes e a abusos, e melhoria do serviço</td><td>Legítimo interesse (IX), sempre com o menor tratamento possível</td></tr>
+          <tr><td>Responder ao suporte e enviar avisos sobre a sua conta, cobrança e mudanças relevantes</td><td>Execução de contrato (V)</td></tr>
+          <tr><td>Defesa em processos judiciais, administrativos ou arbitrais</td><td>Exercício regular de direitos (VI)</td></tr>
+          <tr><td>Comunicações promocionais (se um dia existirem)</td><td>Consentimento (I), que você poderá retirar quando quiser</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Não vendemos dados pessoais, não os usamos para publicidade de terceiros e não tomamos decisões automatizadas que produzam efeitos jurídicos sobre você.</p>
+
+    <h2 id="s4">4. Cofre digital: o que nós não conseguimos ver</h2>
+    <p>As senhas e as anotações do cofre são criptografadas no seu aparelho (AES-256-GCM), com uma chave derivada da sua senha mestra, que nunca é enviada aos nossos servidores. Chegam até nós apenas dados já embaralhados. Por isso não conseguimos ler esse conteúdo nem recuperá-lo para você.</p>
+    <p>Ao criar o cofre, o app mostra uma chave de recuperação. Guarde-a em lugar seguro: sem a senha mestra e sem a chave de recuperação, o conteúdo do cofre não pode ser aberto por ninguém.</p>
+
+    <h2 id="s5">5. Com quem compartilhamos</h2>
+    <p>Compartilhamos dados somente com prestadores de serviço (operadores) que atuam em nosso nome e apenas para as finalidades acima, e com autoridades quando a lei exigir.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th scope="col">Quem</th><th scope="col">Para quê</th></tr></thead>
+        <tbody>
+          <tr><td>Supabase</td><td>Banco de dados, autenticação e funções do servidor. Os dados ficam armazenados em São Paulo (Brasil)</td></tr>
+          <tr><td>Vercel</td><td>Hospedagem do site e do aplicativo</td></tr>
+          <tr><td>Mercado Pago</td><td>Processamento dos pagamentos e gestão da assinatura</td></tr>
+          <tr><td>Provedor de conexão bancária (Pluggy)</td><td>Somente se você decidir conectar uma conta bancária ao app, e apenas para essa conexão, com o seu consentimento</td></tr>
+          <tr><td>Autoridades públicas</td><td>Quando houver obrigação legal, ordem judicial ou requisição de autoridade competente</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="s6">6. Transferência internacional</h2>
+    <p>Alguns prestadores podem tratar dados fora do Brasil, por exemplo na operação da infraestrutura de hospedagem. Quando isso ocorrer, a transferência seguirá uma das hipóteses do art. 33 da LGPD e exigiremos do prestador nível de proteção compatível com o da lei brasileira.</p>
+
+    <h2 id="s7">7. Por quanto tempo guardamos</h2>
     <ul>
-      <li><strong>Conta:</strong> nome, e-mail e senha de acesso (a senha é protegida pelo sistema de autenticação e não fica legível para nós).</li>
-      <li><strong>O que você cadastra no app:</strong> lançamentos, contas, cartões, categorias, tags e contatos (nome, telefone, e-mail, aniversário, empresa e anotações).</li>
-      <li><strong>Cofre digital:</strong> senhas e anotações são criptografadas no seu aparelho antes de chegarem aos nossos servidores, e nós não temos como abri-las. O nome do serviço, o link, o usuário e a categoria de cada item ficam em texto comum, para o app poder listar seus itens.</li>
-      <li><strong>Assinatura:</strong> situação do plano e identificadores da cobrança. Os dados do cartão são processados pelo Mercado Pago e não são armazenados por nós.</li>
-      <li><strong>Preferências:</strong> configurações do app, como temas de notícias, palavras-chave, formato de datas e avisos.</li>
-      <li><strong>Dados técnicos:</strong> registros de funcionamento e segurança (por exemplo, data e hora de acesso e tipo de navegador), usados para manter o serviço estável e seguro.</li>
+      <li><strong>Dados da conta e do que você registra:</strong> enquanto a sua conta existir. Em <em>Configurações → Excluir conta</em> você remove todos os seus dados de forma permanente.</li>
+      <li><strong>Depois do fim do teste ou da assinatura:</strong> <mark>[preencher: o que acontece e por quanto tempo os dados ficam guardados, por exemplo 90 dias, antes da exclusão]</mark>.</li>
+      <li><strong>Registros de acesso à aplicação:</strong> por 6 meses, conforme o art. 15 do Marco Civil da Internet, ou por mais tempo se uma autoridade exigir.</li>
+      <li><strong>Documentos fiscais e de cobrança:</strong> pelo prazo exigido pela legislação tributária e civil.</li>
+      <li><strong>Cópias de segurança</strong> mantidas pelo provedor de infraestrutura, quando existirem, são substituídas pelo ciclo normal do provedor.</li>
     </ul>
 
-    <h2>3. Para que usamos e em quais bases legais</h2>
-    <ul>
-      <li><strong>Prestar o serviço que você contratou</strong> (criar sua conta, mostrar seu painel, guardar seus dados): execução de contrato.</li>
-      <li><strong>Cobrar a assinatura e cumprir obrigações legais e fiscais:</strong> execução de contrato e cumprimento de obrigação legal.</li>
-      <li><strong>Segurança, prevenção a fraudes e melhoria do produto:</strong> legítimo interesse, sempre respeitando seus direitos.</li>
-      <li><strong>Comunicações sobre o serviço</strong> (avisos de conta, cobrança, suporte): execução de contrato. Qualquer comunicação promocional dependerá do seu consentimento.</li>
-    </ul>
-    <p>Não vendemos seus dados e não os usamos para publicidade de terceiros.</p>
+    <h2 id="s8">8. Seus direitos</h2>
+    <p>Pelo art. 18 da LGPD, você pode, a qualquer momento: confirmar se tratamos seus dados; acessá-los; corrigi-los; pedir anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desacordo com a lei; pedir portabilidade; saber com quem compartilhamos; ser informado sobre a possibilidade de não consentir e suas consequências; e revogar consentimentos.</p>
+    <p><strong>Como exercer:</strong> parte disso você faz sozinho no app (editar seus dados, baixar lançamentos, contas e contatos em planilha, e excluir a conta). Para o restante, escreva para <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a>. Confirmamos o recebimento e respondemos em até 15 dias. Podemos pedir informações para confirmar que o pedido é seu. Se não ficar satisfeito, você pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD) e aos órgãos de defesa do consumidor.</p>
 
-    <h2>4. Com quem compartilhamos</h2>
-    <p>Usamos prestadores de serviço (operadores) que tratam dados em nosso nome, somente para as finalidades acima:</p>
-    <ul>
-      <li><strong>Supabase:</strong> banco de dados, autenticação e funções do servidor, com os dados armazenados em São Paulo.</li>
-      <li><strong>Vercel:</strong> hospedagem do site e do aplicativo.</li>
-      <li><strong>Mercado Pago:</strong> processamento de pagamentos e gestão da assinatura.</li>
-      <li><strong>Provedores de conexão bancária:</strong> somente se você decidir conectar uma conta bancária ao app e apenas para essa conexão.</li>
-    </ul>
-    <p>Podemos ainda compartilhar dados quando a lei ou uma ordem de autoridade competente exigir.</p>
+    <h2 id="s9">9. Segurança e incidentes</h2>
+    <p>Usamos conexão criptografada, controle de acesso por conta (cada conta só enxerga as próprias informações), criptografia no aparelho para o cofre e acesso interno restrito. Nenhum sistema é totalmente imune a falhas. Se ocorrer um incidente de segurança que possa causar risco ou dano relevante a você, comunicaremos você e a ANPD em prazo razoável, nos termos do art. 48 da LGPD.</p>
 
-    <h2>5. Transferência internacional</h2>
-    <p>Alguns prestadores podem tratar dados fora do Brasil (por exemplo, na operação da infraestrutura de hospedagem). Quando isso ocorrer, adotamos as salvaguardas previstas na LGPD.</p>
+    <h2 id="s10">10. Cookies e armazenamento local</h2>
+    <p>O site de apresentação não usa cookies de rastreamento nem ferramentas de publicidade. O aplicativo usa o armazenamento do seu navegador para manter a sessão aberta e guardar preferências (por exemplo, o modo de exibição dos contatos e a escolha de ocultar a categoria “Sem categoria”). Você pode limpar esses dados nas configurações do navegador; isso encerra a sessão.</p>
 
-    <h2>6. Por quanto tempo guardamos</h2>
-    <p>Mantemos seus dados enquanto a sua conta existir. Em <em>Configurações → Excluir conta</em> você remove todos os seus dados de forma permanente. Podemos reter apenas o que a lei exigir, como registros fiscais de cobrança.</p>
+    <h2 id="s11">11. Contatos e dados de terceiros</h2>
+    <p>Ao cadastrar contatos, você registra dados de outras pessoas. Nós os tratamos apenas para guardá-los e mostrá-los para você, e não os usamos para outra finalidade. Você é responsável por ter legitimidade para registrar esses dados e por usá-los de forma compatível com a lei. Se uma pessoa nos procurar para pedir a exclusão do seu dado, orientaremos o caminho adequado.</p>
 
-    <h2>7. Seus direitos</h2>
-    <p>Pela LGPD (art. 18), você pode pedir: confirmação de que tratamos seus dados, acesso, correção, anonimização, bloqueio ou eliminação de dados desnecessários, portabilidade, informação sobre com quem compartilhamos e revogação de consentimento. Parte disso você faz sozinho no app: editar seus dados, baixar lançamentos, contas e contatos em planilha e excluir a conta. Para o restante, escreva para <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a>. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+    <h2 id="s12">12. Dados sensíveis</h2>
+    <p>Não pedimos dados pessoais sensíveis (como saúde, origem racial ou étnica, convicção religiosa ou política). Se você registrar por conta própria algo desse tipo, por exemplo uma despesa médica ou uma anotação, usamos apenas para exibir a você e não para qualquer outra finalidade. Evite colocar nas anotações o que você não quiser guardar no app.</p>
 
-    <h2>8. Segurança</h2>
-    <p>Usamos conexão criptografada, acesso restrito por conta e, no cofre, criptografia AES-256 feita no seu aparelho. Nenhum sistema é totalmente infalível: guarde a sua senha mestra e a chave de recuperação do cofre com cuidado, pois sem elas ninguém consegue abrir seus itens.</p>
+    <h2 id="s13">13. Menores de idade</h2>
+    <p>O Vida e Controle é destinado a maiores de 18 anos e não coletamos intencionalmente dados de crianças e adolescentes. Se identificarmos uma conta de menor, vamos encerrá-la e excluir os dados.</p>
 
-    <h2>9. Cookies e armazenamento no navegador</h2>
-    <p>O site de apresentação não usa cookies de rastreamento. O aplicativo usa o armazenamento do navegador para manter sua sessão e guardar preferências, como o modo de exibição dos contatos.</p>
+    <h2 id="s14">14. Mudanças nesta política</h2>
+    <p>Podemos atualizar esta política. Quando a mudança for relevante, avisaremos pelo app ou por e-mail com antecedência razoável, e a data e a versão no topo desta página serão atualizadas. As versões anteriores ficam disponíveis mediante pedido.</p>
 
-    <h2>10. Crianças e adolescentes</h2>
-    <p>O Vida e Controle não é destinado a menores de 18 anos.</p>
+    <h2 id="s15">15. Contato e encarregado</h2>
+    <p>Para dúvidas, pedidos ou reclamações sobre privacidade, escreva para <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a>. Encarregado pelo tratamento de dados pessoais (DPO): <mark>[preencher: nome ou canal exclusivo]</mark>.</p>
 
-    <h2>11. Mudanças nesta política</h2>
-    <p>Se mudarmos algo relevante, avisaremos pelo app ou por e-mail e atualizaremos a data no topo desta página.</p>
-
-    <p class="box">Dúvidas? Escreva para <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a>.</p>
+    <p class="box">Operado por <mark>[preencher: razão social]</mark> · CNPJ <mark>[preencher: CNPJ]</mark> · <mark>[preencher: endereço]</mark>.</p>
   </main>
 
-  <footer>© Vida e Controle · <a href="/termos/">Termos de Uso</a></footer>
+  <footer>© Vida e Controle · <a href="/termos/">Termos de Uso</a> · <a href="/">Voltar ao site</a></footer>
 </body>
 </html>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Icon } from '../components/Icons'
+import { Logo } from '../components/Logo'
 import { APP_URL, NAV, REGISTER_URL } from '../lib/site'
 
 export function Header() {
@@ -15,9 +16,9 @@ export function Header() {
 
   return (
     <header className={`fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur-md transition-shadow duration-300 ${scrolled || open ? 'border-b border-sand-200 shadow-[0_8px_24px_-16px_rgba(12,61,34,.25)]' : 'border-b border-transparent'}`}>
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-6">
+      <div className="mx-auto flex h-[72px] max-w-6xl items-center justify-between px-5 sm:h-20 sm:px-6">
         <a href="#topo" aria-label="Vida e Controle, início">
-          <img src="/logo-completa.png" alt="Vida e Controle" width={168} height={44} style={{ height: 44, width: 'auto' }} draggable={false} />
+          <Logo />
         </a>
 
         <nav aria-label="Principal" className="hidden items-center gap-8 md:flex">

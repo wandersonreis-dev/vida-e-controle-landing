@@ -4,99 +4,161 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Termos de Uso — Vida e Controle</title>
-  <meta name="description" content="Condições de uso do Vida e Controle: período de teste, assinatura, cofre de senhas, responsabilidades e cancelamento." />
+  <meta name="description" content="Condições de uso do Vida e Controle: teste gratuito, assinatura, arrependimento e cancelamento, cofre de senhas, responsabilidades e atendimento." />
   <meta name="theme-color" content="#ffffff" />
   <link rel="canonical" href="https://vidaecontrole.com.br/termos/" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,700;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root { --forest:#0C3D22; --ink:#131714; --soft:#3F4842; --mute:#5C655F; --sand:#FBFAF7; --line:#ECEAE2; --mint:#edf7f2; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-padding-top: 24px; }
     body { font-family: 'Manrope', system-ui, sans-serif; background: var(--sand); color: var(--ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }
     header { border-bottom: 1px solid var(--line); background: #fff; }
-    .bar { max-width: 760px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-    .bar img { height: 40px; width: auto; display: block; }
+    .bar { max-width: 780px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .logo { display: inline-flex; align-items: center; gap: 12px; }
+    .logo img { width: 44px; height: 44px; display: block; }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-name { font-family: 'Instrument Sans', 'Manrope', sans-serif; font-weight: 700; font-size: 1.7rem; line-height: 1; letter-spacing: -0.02em; color: var(--ink); }
+    .logo-name em { font-weight: 400; font-style: italic; color: #2f9e6e; }
+    .logo-slogan { margin-top: 6px; font-size: 10.5px; font-weight: 700; line-height: 1; letter-spacing: 0.17em; text-transform: uppercase; white-space: nowrap; color: #1a6641; }
     .bar a.back { font-size: 14px; font-weight: 600; color: var(--forest); text-decoration: none; }
     .bar a.back:hover { text-decoration: underline; }
-    main { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+    main { max-width: 780px; margin: 0 auto; padding: 48px 20px 80px; }
     h1 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.1; letter-spacing: -0.03em; font-weight: 800; }
     .meta { margin-top: 12px; color: var(--mute); font-size: 14px; }
-    h2 { margin-top: 40px; font-size: 1.3rem; letter-spacing: -0.01em; font-weight: 800; }
-    p, li { margin-top: 12px; color: var(--soft); }
-    ul { padding-left: 22px; }
+    h2 { margin-top: 44px; font-size: 1.3rem; letter-spacing: -0.01em; font-weight: 800; }
+    p, li { color: var(--soft); }
+    p { margin-top: 12px; }
+    ul, ol { padding-left: 22px; margin-top: 8px; }
     li { margin-top: 6px; }
     a { color: var(--forest); text-underline-offset: 3px; }
     mark { background: #fff3c4; color: #5a4300; padding: 1px 6px; border-radius: 4px; font-weight: 600; }
     .box { margin-top: 24px; padding: 16px 18px; background: var(--mint); border: 1px solid #c9e9d8; border-radius: 12px; color: var(--ink); }
+    .box p, .box li { color: var(--ink); }
+    .box p:first-child { margin-top: 0; }
+    .toc { margin-top: 24px; padding: 16px 18px 16px 38px; background: #fff; border: 1px solid var(--line); border-radius: 12px; font-size: 14.5px; columns: 2; column-gap: 28px; }
+    .toc li { margin-top: 4px; break-inside: avoid; }
     footer { border-top: 1px solid var(--line); padding: 24px 20px; text-align: center; color: var(--mute); font-size: 13px; }
     a:focus-visible { outline: 3px solid #2f9e6e; outline-offset: 3px; border-radius: 4px; }
+    @media (max-width: 640px) { .toc { columns: 1; } }
+    @media (max-width: 520px) { .bar a.back { display: none; } }
   </style>
 </head>
 <body>
   <header>
     <div class="bar">
-      <a href="/" aria-label="Vida e Controle, início"><img src="/logo-completa.png" alt="Vida e Controle" width="150" height="40" /></a>
+      <a href="/" aria-label="Vida e Controle, início"><span class="logo"><img src="/icon.svg" width="44" height="44" alt="" /><span class="logo-text" translate="no"><span class="logo-name">Vida <em>e</em> Controle</span><span class="logo-slogan">Concentre-se no que importa</span></span></span></a>
       <a class="back" href="/">Voltar ao site</a>
     </div>
   </header>
 
   <main>
     <h1>Termos de Uso</h1>
-    <p class="meta">Última atualização: 4 de outubro de 2026</p>
+    <p class="meta">Versão 1.0 · Última atualização: 4 de outubro de 2026</p>
 
-    <p>Estes termos valem para quem usa o Vida e Controle (site e aplicativo). Ao criar uma conta, você declara que leu e concorda com eles e com a nossa <a href="/privacidade/">Política de Privacidade</a>.</p>
+    <div class="box">
+      <p><strong>Em resumo:</strong></p>
+      <ul>
+        <li>Você testa 30 dias sem cartão. Depois, para continuar, assina o plano mensal ou anual.</li>
+        <li>Pagou e se arrependeu? Em até 7 dias da contratação, você pede o reembolso integral.</li>
+        <li>Pode cancelar quando quiser, sem multa e sem fidelidade.</li>
+        <li>O cofre é trancado com a sua senha mestra: se perder a senha e a chave de recuperação, ninguém abre, nem nós.</li>
+        <li>O Vida e Controle organiza as suas informações. Não somos banco, nem consultoria financeira.</li>
+      </ul>
+    </div>
 
-    <h2>1. O que é o serviço</h2>
-    <p>O Vida e Controle é um aplicativo para organizar finanças pessoais, guardar senhas num cofre digital e gerenciar contatos, reunidos num painel. É uma ferramenta de organização: não prestamos consultoria financeira, contábil, jurídica ou de investimentos.</p>
+    <p>Estes Termos de Uso regulam o uso do site e do aplicativo Vida e Controle (“Serviço”), oferecidos por <mark>[preencher: razão social]</mark>, CNPJ <mark>[preencher: CNPJ]</mark>, com sede em <mark>[preencher: endereço completo]</mark> (“nós”). Ao criar uma conta, você declara que leu e concorda com estes termos e com a <a href="/privacidade/">Política de Privacidade</a>.</p>
 
-    <h2>2. Sua conta</h2>
+    <ol class="toc" aria-label="Sumário">
+      <li><a href="#s1">O que é o Serviço</a></li>
+      <li><a href="#s2">Sua conta</a></li>
+      <li><a href="#s3">Teste gratuito</a></li>
+      <li><a href="#s4">Assinatura, preço e pagamento</a></li>
+      <li><a href="#s5">Arrependimento e cancelamento</a></li>
+      <li><a href="#s6">Cofre digital</a></li>
+      <li><a href="#s7">Seu conteúdo e dados de terceiros</a></li>
+      <li><a href="#s8">Uso permitido</a></li>
+      <li><a href="#s9">Propriedade intelectual</a></li>
+      <li><a href="#s10">Disponibilidade e mudanças</a></li>
+      <li><a href="#s11">Responsabilidades</a></li>
+      <li><a href="#s12">Suspensão e encerramento</a></li>
+      <li><a href="#s13">Atendimento</a></li>
+      <li><a href="#s14">Lei aplicável e foro</a></li>
+    </ol>
+
+    <h2 id="s1">1. O que é o Serviço</h2>
+    <p>O Vida e Controle é um aplicativo para organizar finanças pessoais (lançamentos, contas, cartões e relatórios), guardar senhas e anotações num cofre digital e gerenciar contatos, reunindo tudo num painel. Funciona no navegador e pode ser instalado na tela inicial do celular.</p>
+    <p>É uma ferramenta de organização. Não somos instituição financeira, não movimentamos nem guardamos o seu dinheiro, não intermediamos pagamentos entre você e terceiros e não prestamos consultoria financeira, contábil, jurídica ou de investimentos. Os números e relatórios dependem dos dados que você registra.</p>
+
+    <h2 id="s2">2. Sua conta</h2>
     <ul>
-      <li>Você precisa ter 18 anos ou mais e informar dados verdadeiros no cadastro.</li>
-      <li>Você é responsável por manter sua senha de acesso em segurança e por tudo o que acontece na sua conta.</li>
-      <li>Avise-nos pelo e-mail <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a> se suspeitar de uso indevido.</li>
+      <li>É preciso ter 18 anos ou mais e capacidade legal para contratar.</li>
+      <li>Você deve informar dados verdadeiros e mantê-los atualizados.</li>
+      <li>A conta é pessoal. Mantenha sua senha de acesso em segurança e não a compartilhe.</li>
+      <li>Se suspeitar de uso indevido, avise-nos imediatamente em <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a>.</li>
     </ul>
 
-    <h2>3. Período de teste e assinatura</h2>
+    <h2 id="s3">3. Teste gratuito</h2>
+    <p>Todo novo cadastro recebe 30 dias de teste com acesso completo, sem necessidade de cartão de crédito e sem cobrança. Ao final do teste, para continuar usando o Serviço é preciso contratar um plano. Se você não contratar, o acesso poderá ser suspenso, e o que acontece com os seus dados está descrito na <a href="/privacidade/#s7">Política de Privacidade</a>. Antes da suspensão, você poderá baixar seus dados em planilha.</p>
+
+    <h2 id="s4">4. Assinatura, preço e pagamento</h2>
     <ul>
-      <li>Todo novo cadastro tem 30 dias de teste gratuito com acesso completo, sem necessidade de cartão de crédito.</li>
-      <li>Depois do teste, o uso continua mediante assinatura mensal ou anual, nos valores informados na página de preços no momento da contratação.</li>
-      <li>A cobrança é feita pelo Mercado Pago e se renova automaticamente a cada período (mensal ou anual) até o cancelamento.</li>
-      <li>Não há multa nem fidelidade: você pode cancelar quando quiser. O cancelamento vale para as próximas cobranças.</li>
-      <li>Podemos alterar preços e planos para novas contratações e renovações, com aviso prévio razoável.</li>
+      <li><strong>Planos:</strong> mensal (R$ 39,90 por mês) e anual (R$ 358,80 por ano, equivalente a R$ 29,90 por mês). Os dois dão acesso aos mesmos recursos. O preço vigente é sempre o exibido na página de preços no momento da contratação.</li>
+      <li><strong>Pagamento:</strong> processado pelo Mercado Pago. Não temos acesso aos dados completos do seu cartão.</li>
+      <li><strong>Renovação automática:</strong> a assinatura se renova ao fim de cada período (mensal ou anual) pelo mesmo valor, até que você cancele. Você será avisado por e-mail antes da primeira cobrança.</li>
+      <li><strong>Reajuste:</strong> mudanças de preço só valem para renovações futuras e serão comunicadas com pelo menos 30 dias de antecedência, para você decidir se quer continuar ou cancelar antes da cobrança.</li>
+      <li><strong>Falha no pagamento:</strong> se a cobrança não for aprovada, tentaremos novamente conforme as regras do meio de pagamento e avisaremos você. Persistindo a falha, o acesso poderá ser suspenso até a regularização.</li>
+      <li><strong>Nota fiscal:</strong> emitida conforme a legislação aplicável.</li>
     </ul>
 
-    <h2>4. Cofre digital: sua senha mestra e a chave de recuperação</h2>
-    <p>O conteúdo do cofre é criptografado no seu aparelho com uma chave derivada da sua senha mestra. Por isso, nós não conseguimos abrir nem recuperar seus itens. Se você perder ao mesmo tempo a senha mestra e a chave de recuperação, o conteúdo do cofre não poderá ser recuperado por ninguém. Guarde a chave de recuperação em local seguro.</p>
+    <h2 id="s5">5. Arrependimento e cancelamento</h2>
+    <p><strong>Direito de arrependimento.</strong> Como a contratação é feita à distância, você pode desistir em até 7 dias corridos a contar da contratação do plano pago (art. 49 do Código de Defesa do Consumidor) e receber de volta, integralmente, o que pagou. Basta pedir por <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a>. O estorno é solicitado ao Mercado Pago e segue os prazos do meio de pagamento usado.</p>
+    <p><strong>Cancelamento.</strong> Você pode cancelar a assinatura a qualquer momento, sem multa e sem fidelidade, por <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a> ou diretamente no Mercado Pago, onde a assinatura é gerenciada. O cancelamento interrompe as próximas cobranças e você continua com acesso até o fim do período já pago. Passado o prazo de arrependimento, não há reembolso proporcional do período em curso, salvo quando a lei exigir ou quando uma falha nossa tiver impedido o uso do Serviço <mark>[decisão a confirmar: política de reembolso proporcional, principalmente no plano anual]</mark>.</p>
 
-    <h2>5. Uso permitido</h2>
-    <p>Você concorda em não: usar o serviço para fins ilegais; tentar acessar contas ou dados de outras pessoas; interferir no funcionamento ou na segurança do serviço; copiar, revender ou fazer engenharia reversa do aplicativo, salvo o que a lei permitir.</p>
+    <h2 id="s6">6. Cofre digital: senha mestra e chave de recuperação</h2>
+    <p>O conteúdo do cofre é criptografado no seu aparelho com uma chave derivada da sua senha mestra, que não é enviada aos nossos servidores. Por isso, não conseguimos abrir, ler nem recuperar os itens do cofre. Ao criar o cofre, o app mostra uma chave de recuperação. Você é responsável por guardar a senha mestra e a chave de recuperação. Se perder as duas, o conteúdo do cofre não poderá ser recuperado por ninguém, e isso não será falha do Serviço.</p>
 
-    <h2>6. Seus dados e seu conteúdo</h2>
-    <p>Os dados e contatos que você cadastra continuam sendo seus. Você nos autoriza a tratá-los apenas para prestar o serviço, conforme a Política de Privacidade. Você é responsável por ter o direito de cadastrar os contatos e informações de terceiros que inserir. Pode baixar seus dados em planilha e excluir a conta a qualquer momento em <em>Configurações</em>.</p>
+    <h2 id="s7">7. Seu conteúdo e dados de terceiros</h2>
+    <p>Os dados, lançamentos, contatos e anotações que você registra continuam sendo seus. Você nos autoriza a tratá-los apenas para prestar o Serviço, conforme a Política de Privacidade. Ao cadastrar dados de outras pessoas, você declara ter legitimidade para isso e se responsabiliza pelo uso que fizer. Você pode baixar seus dados e excluir a conta a qualquer momento em <em>Configurações</em>.</p>
 
-    <h2>7. Disponibilidade e mudanças</h2>
-    <p>Trabalhamos para manter o serviço disponível e seguro, mas não garantimos funcionamento ininterrupto: pode haver manutenção, instabilidades ou falhas de terceiros. Podemos evoluir, alterar ou descontinuar funcionalidades, avisando com antecedência quando a mudança for relevante.</p>
+    <h2 id="s8">8. Uso permitido</h2>
+    <p>Ao usar o Serviço, você concorda em não:</p>
+    <ul>
+      <li>usá-lo para fins ilegais ou para violar direitos de terceiros;</li>
+      <li>tentar acessar contas, dados ou sistemas de outras pessoas;</li>
+      <li>interferir no funcionamento ou na segurança do Serviço (por exemplo, com testes automatizados de invasão, sobrecarga ou coleta massiva de dados);</li>
+      <li>copiar, revender, sublicenciar ou fazer engenharia reversa do aplicativo, salvo quando a lei permitir.</li>
+    </ul>
 
-    <h2>8. Limitação de responsabilidade</h2>
-    <p>Os números e relatórios mostrados dependem dos dados que você registra. Decisões financeiras tomadas com base neles são de sua responsabilidade. Na máxima extensão permitida pela lei, nossa responsabilidade se limita a danos diretos comprovados e ao valor pago por você nos 12 meses anteriores ao fato, sem afastar direitos que o Código de Defesa do Consumidor garante a você.</p>
+    <h2 id="s9">9. Propriedade intelectual</h2>
+    <p>O nome, a marca, o design, os textos e o código do Vida e Controle pertencem a nós ou a quem nos licenciou. Estes termos concedem a você apenas uma licença pessoal, limitada, não exclusiva, intransferível e revogável para usar o Serviço enquanto a sua conta estiver ativa. Nada aqui transfere a você qualquer direito de propriedade intelectual.</p>
 
-    <h2>9. Propriedade intelectual</h2>
-    <p>O nome, a marca, o design e o código do Vida e Controle pertencem a nós. Estes termos não transferem nenhum desses direitos, apenas permitem o uso do serviço conforme descrito aqui.</p>
+    <h2 id="s10">10. Disponibilidade e mudanças</h2>
+    <p>Trabalhamos para manter o Serviço disponível e seguro, mas podem ocorrer manutenções, instabilidades e falhas de provedores terceiros (hospedagem, internet, pagamento). Podemos evoluir, alterar ou descontinuar funcionalidades. Mudanças que reduzam de forma relevante o que você contratou serão comunicadas com antecedência mínima de 30 dias, e você poderá cancelar sem custo. Alterações destes termos seguem a mesma regra e nunca valem retroativamente para o que já foi pago.</p>
 
-    <h2>10. Encerramento</h2>
-    <p>Você pode encerrar sua conta quando quiser. Podemos suspender ou encerrar contas que descumpram estes termos ou a lei, avisando sempre que possível.</p>
+    <h2 id="s11">11. Responsabilidades</h2>
+    <ul>
+      <li>Respondemos pelos danos que causarmos nos termos da lei, inclusive do Código de Defesa do Consumidor. Nada nestes termos exclui direitos que a lei garante a você.</li>
+      <li>Não nos responsabilizamos por danos decorrentes de culpa exclusiva sua ou de terceiros, como o vazamento de senhas por descuido do usuário, o uso de aparelho infectado ou a perda simultânea da senha mestra e da chave de recuperação do cofre.</li>
+      <li>Não garantimos resultados financeiros. Decisões tomadas com base nas informações do app são de sua responsabilidade.</li>
+      <li>Links para sites de terceiros (como notícias) são de responsabilidade desses sites.</li>
+    </ul>
 
-    <h2>11. Mudanças nestes termos</h2>
-    <p>Se atualizarmos estes termos de forma relevante, avisaremos pelo app ou por e-mail. Continuar usando o serviço depois do aviso significa concordar com a nova versão.</p>
+    <h2 id="s12">12. Suspensão e encerramento</h2>
+    <p>Você pode encerrar a conta quando quiser. Podemos suspender ou encerrar contas que violem estes termos ou a lei, ou que coloquem a segurança do Serviço em risco, avisando você sempre que possível e dando oportunidade de esclarecimento quando a situação permitir. Em caso de encerramento por iniciativa nossa sem violação sua, devolveremos o valor pago pelo período não usado.</p>
 
-    <h2>12. Lei aplicável e foro</h2>
-    <p>Estes termos seguem as leis do Brasil. Fica eleito o foro da comarca de <mark>[preencher: cidade/UF]</mark>, ressalvado o direito do consumidor de ajuizar ações no foro do seu domicílio.</p>
+    <h2 id="s13">13. Atendimento</h2>
+    <p>Para dúvidas, sugestões, reclamações, arrependimento ou cancelamento, escreva para <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a>. Confirmamos o recebimento imediatamente e respondemos em até 5 dias. Pedidos relativos a dados pessoais seguem o prazo da Política de Privacidade.</p>
 
-    <p class="box">Operado por <mark>[preencher: razão social]</mark> (CNPJ <mark>[preencher: CNPJ]</mark>). Contato: <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a>.</p>
+    <h2 id="s14">14. Lei aplicável e foro</h2>
+    <p>Estes termos são regidos pelas leis brasileiras. Fica eleito o foro do domicílio do consumidor para resolver qualquer controvérsia decorrente deles.</p>
+
+    <p class="box">Operado por <mark>[preencher: razão social]</mark> · CNPJ <mark>[preencher: CNPJ]</mark> · <mark>[preencher: endereço]</mark> · <a href="mailto:suporte@vidaecontrole.com.br">suporte@vidaecontrole.com.br</a></p>
   </main>
 
-  <footer>© Vida e Controle · <a href="/privacidade/">Política de Privacidade</a></footer>
+  <footer>© Vida e Controle · <a href="/privacidade/">Política de Privacidade</a> · <a href="/">Voltar ao site</a></footer>
 </body>
 </html>
